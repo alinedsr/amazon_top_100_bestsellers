@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "amazon-top-100-bestsellers"
+version = "0.1.0"
+description = ""
+authors = ["Aline Silveira <aline@outlook.ie>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.group.dev.dependencies]
+pandas = "^2.2.1"
+streamlit = "^1.32.2"
+plotly = "^5.20.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

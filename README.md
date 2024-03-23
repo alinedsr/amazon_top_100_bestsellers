@@ -1,1 +1,6 @@
-# amazon_top_100_bestsellers
+# Projeto: Análise dos 100 Livros Mais Vendidos da Amazon
+
+- Python
+- Pandas
+- Streamlit
+- Plotly
