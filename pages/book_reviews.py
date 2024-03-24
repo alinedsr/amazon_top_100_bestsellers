@@ -1,12 +1,22 @@
 import streamlit as st
 import pandas as pd
+from st_pages import Page, show_pages
 
 #Page Config
-st.set_page_config(layout="wide")
+st.set_page_config(page_title="Prices", layout="wide")
 
 #Title and Intro
 st.title(":open_book: :rainbow[Amazon Books Reviews - 2023]", anchor=False)
 st.divider()
+
+# Specify what pages should be shown in the sidebar, and what their titles 
+# and icons should be
+show_pages(
+    [
+        Page("main.py", "Prices", ":home:"),
+        Page("pages/book_reviews.py", "Reviews", ":books:")
+    ]
+)
 
 #Dataframes
 df_reviews = pd.read_csv("data/customer reviews.csv")
